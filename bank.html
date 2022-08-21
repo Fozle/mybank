@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bank</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <header>
+        <h1 class="text-5xl text-center mt-5">Lets get <span class="font-semibold text-purple-600">Money</span>!!!</h1>
+       </header>
+       <main >
+        <section class="mt-12">
+            <div class="grid grid-cols-3 gap-2 mx-auto w-9/12">
+                <div class="bg-emerald-400   text-white p-8 rounded-lg">
+                    <h3 class="text-3xl w">Deposit</h3>
+                    <h2 class="text-5xl w">$<span id="deposit">00</span> </h2>
+                </div>
+                <div class="bg-amber-400   text-white p-8 rounded-lg">
+                    <h3 class="text-3xl w">Withraw</h3>
+                    <h2 class="text-5xl w">$ <span id="withrawamount">00</span> </h2>
+                </div>
+                <div class="bg-cyan-400   text-white p-8 rounded-lg">
+                    <h3 class="text-3xl w">Balance</h3>
+                    <h2 class="text-5xl w">$ <span id="withrawtotal">1240</span> </h2>
+                </div>
+            </div>
+        </section>
+        <section class="mt-12">
+            <div class="grid grid-cols-2 gap-2 mx-auto w-9/12">
+                <div class="bg-emerald-400   text-black p-8 rounded-lg">
+                    <h3 class="text-3xl w">Please Deposit</h3>
+                    <input class="w-9/12 block m-2 px-3" type="number" name="" id="Deposit-fild" placeholder="$ Ammount You want to Deposit">
+        
+                 <button id="Deposit-btn" class="m-2 bg-white hover:bg-black hover:text-white px-8 py-2 text-black font-medium rounded-lg">Deposit</button>
+                </div>
+                <div class="bg-amber-400   text-black p-8 rounded-lg">
+                    <h3 class="text-3xl w">Please Withraw</h3>
+                    
+                    <input class="w-9/12 block m-2 px-3" type="number" name="" id="Withraw-fild" placeholder="$ Ammount You want to Withraw">
+        
+                 <button id="Withraw-btn" class="m-2 bg-white hover:bg-black hover:text-white px-8 py-2 text-black font-medium rounded-lg">Withraw</button>
+                </div>
+               
+            </div>
+        </section>
+        
+       </main>
+<script src="js/deposit.js"></script>
+<script src="js/withraw.js"></script>
+</body>
+</html>
